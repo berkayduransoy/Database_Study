@@ -50,7 +50,7 @@ cursor.execute("""CREATE TABLE IF NOT EXISTS CARS (
                year INTEGER,
                employee_id INTEGER,
                FOREIGN KEY(employee_id) REFERENCES EMPLOYEE(employee_id)
-               deleted integer DEFAULT 0 
+               deleted integer DEFAULT 0,
                )""")
 
 cursor.execute("""CREATE TABLE IF NOT EXISTS RENT (
